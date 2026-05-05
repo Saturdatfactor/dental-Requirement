@@ -186,7 +186,7 @@
 
     <header>
         <div class="header-text">
-            <h1>Dental Tracker</h1>
+            <h1>Dental Requirement</h1>
             <p id="current-date-display">Clinical Dashboard</p>
         </div>
         <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle Dark Mode">
@@ -334,7 +334,7 @@
             { id: 'sealant', name: 'Sealant', target: 4 },
             { id: 'fluoride', name: 'Fluoride', target: 1 },
             { id: 'ohi', name: 'OHI', target: 2 },
-            { id: 'caries', name: 'Caries Control', target: 0 },
+            { id: 'caries', name: 'Caries Risk Control', target: 0 },
             { id: 'extract', name: 'Extract', target: 3 },
             { id: 'other', name: 'Others', target: 1 }
         ];
@@ -556,7 +556,7 @@
                 document.getElementById('total-remain-text').innerText = "คุณทำเป้าหมายครบถ้วนแล้ว! 🎉";
                 triggerConfetti(); // เรียกใช้ฟังก์ชันจุดพลุ
             } else {
-                document.getElementById('total-remain-text').innerText = `เหลืออีก ${totalRemain} เคสที่ต้องเคลียร์`;
+                document.getElementById('total-remain-text').innerText = `เหลืออีก ${totalRemain} Requirement ที่ต้องทำเพิ่ม`;
             }
         }
 
